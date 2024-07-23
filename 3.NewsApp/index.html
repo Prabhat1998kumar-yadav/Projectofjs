@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-container">
+            <div class="home">
+                <img src="https://www.shutterstock.com/image-vector/illustration-flat-icon-tv-channel-260nw-482689633.jpg"
+                    alt="" id="home-logo">
+            </div>
+            <div class="list">
+                <ul>
+                    <li><a href="#" onclick="handleClick('ipl')">IPL</a></li>
+                    <li><a href="#" onclick="handleClick('Finance')">FINANCE</a></li>
+                    <li><a href="#" onclick="handleClick('Politics')">POLITICS</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <form action="" id="nav-search-box">
+                    <input type="search" id="search-query">
+                    <input type="submit" id="submit">
+                </form>
+            </div>
+        </div>
+        <div class="cards-container" id="cards-container">
+            <template id="temp-box">
+                <div class="card" id="card">
+                    <img src="https://via.placeholder.com/300" alt="">
+                    <div class="card-info">
+                        <div class="title">
+                            <p id="title">Lorem ipsum dolor sit.</p>
+                        </div>
+                        <div class="description">
+                            <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam debitis vero
+                                dolorem cupiditate unde odit voluptates velit sunt! Illum aliquam facere possimus error sit
+                                ipsa expedita nihil eius! Incidunt, adipisci.</p>
+                        </div>
+                        <div class="button">
+                            <a href="#" id="button" target="_blank">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </template>
+           
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
